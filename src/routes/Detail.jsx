@@ -20,7 +20,6 @@ const Detail = (props) => {
   const contentRef = useRef();
   useEffect(() => {
     if (contentRef.current) {
-      console.log("jjjj");
       contentRef.current.innerHTML = body;
     }
   }, [contentRef]);
