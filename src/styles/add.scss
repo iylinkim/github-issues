@@ -1,0 +1,12 @@
+.add {
+  margin: 10px 0;
+
+  & .add_link{
+      display:block;
+      width:100%;
+
+      & > img{
+          width:100%;
+      }
+  }
+}

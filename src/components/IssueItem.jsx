@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router";
+import "styles/issueItem.scss";
 
 const IssueItem = ({ issue }) => {
   const {
@@ -25,13 +26,13 @@ const IssueItem = ({ issue }) => {
   return (
     <li className="issue_item" onClick={goToDetail}>
       <div className="issue_content">
-        <h2>
+        <h2 className="issue_title">
           <span className="issue_number">#{number}</span>
           {title}
         </h2>
-        <span className="user">{login}</span>
+        <span className="user_name">작성자: {login},</span>
         <span className="date">
-          작성일:{" "}
+          작성일: 
           {`${newDate.getFullYear()}년 ${newDate.getMonth()}월 ${newDate.getDay()}일`}
         </span>
       </div>

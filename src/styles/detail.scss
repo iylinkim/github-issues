@@ -1,0 +1,48 @@
+@import "styles/common.scss";
+
+.detail {
+  & .detail_title {
+    padding: 15px 0;
+    margin-bottom:20px;
+    display: flex;
+    border-bottom: 1px solid $DarkGrey;
+    font-size: 0.6rem;
+
+    & .user_profile {
+      width: 10%;
+      margin-right: 1%;
+      height: 10%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      & > img {
+        width: 100%;
+      }
+    }
+
+    & .issue_title {
+      padding-bottom: 5px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      & .issue_number {
+        color: $DarkGrey;
+        padding-right: 10px;
+      }
+    }
+
+    & .user_name {
+      padding-right: 5px;
+    }
+
+    & .comments {
+      flex-grow: 1;
+      text-align: right;
+      width: 15%;
+    }
+  }
+}

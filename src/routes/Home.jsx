@@ -3,7 +3,6 @@ import Add from "../components/Add";
 import IssueItem from "../components/IssueItem";
 
 const Home = ({ api }) => {
-  console.log("home");
   const [issues, setIssues] = useState([]);
 
   useEffect(() => {
@@ -11,7 +10,7 @@ const Home = ({ api }) => {
   }, [api]);
 
   return (
-    <div className="wrap">
+    <div>
       <ul className="issuse_list">
         {issues &&
           issues.map((issue, index) => {
