@@ -2,14 +2,16 @@ import "./app.css";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
+import Header from "./components/Header";
 
-function App() {
+function App({api}) {
   return (
     <>
+      <Header />
       <Router>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home api={api}/>
           </Route>
           <Route exact path="/detail">
             <Detail />
