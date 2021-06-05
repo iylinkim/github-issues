@@ -5,12 +5,7 @@ import App from "./app";
 import Api from "./service/api";
 
 const api = new Api();
-// let issuse_data = null;
-// api.getIssues().then((data) => {
-//   issuse_data = data;
-//   // console.log(issuse_data)
-// });
-// console.log(issuse_data);
+
 ReactDOM.render(
   <React.StrictMode>
     <App api={api} />

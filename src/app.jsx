@@ -13,7 +13,7 @@ function App({api}) {
           <Route exact path="/">
             <Home api={api}/>
           </Route>
-          <Route exact path="/detail">
+          <Route exact path="/:id">
             <Detail />
           </Route>
         </Switch>
